@@ -1,5 +1,7 @@
 table,th,td{
     border: 1px solid black;
+    justify-items: center;
+    
 }
 
 th,td{
@@ -11,3 +13,4 @@ th,td{
     background-color: rgb(241, 182, 182);
     color: rgb(99, 6, 6);
 }
+
