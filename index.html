@@ -4,41 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Project</title>
-     <link rel="stylesheet" href="./tables.css">
+    <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
-    <header>
-        <div>
-            <h1>My Awesome Restaurant</h1>
+    <header class="site-init">
+        <div class="navigation-bar">
+            <div>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div>
+                <h1>Lorem</h1>
+            </div>
+            <nav class="menu">
+                <a class="link-selected" href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="go.html">To go</a>
+            </nav>
+            <div>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
         </div>
     </header>
-    <section>
-        <h2>Welcome to your favorite place</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, dolore fuga sapiente voluptates atque aut iusto, quibusdam consequatur debitis voluptate molestiae! Sequi ea quisquam vitae ex perspiciatis tempora modi rem.</p>
-        <div>
-            <table>
-               <thead>
-                <tr>
-                    <th>Item 1</th>
-                    <th>Posole</th>
-                    <th>Description</th>
-                    <th>$14.99</th>
-                </tr>
-                <tr>
-                    <th>Item 2</th>
-                    <th>Quesabirria Tacos</th>
-                    <th>Description</th>
-                    <th>15.99</th>
-                </tr>
-                   <tr>
-                    <th>Item 3</th>
-                    <th>Enchiladas Suizas</th>
-                    <th>Description</th>
-                    <th>16.99</th>
-                </tr>
-               </thead> 
-            </table>
+
+    <main>
+            <div class="dish-month-container">
+                <div class="dish-month-img">
+                     <img src="salad.jpg" alt="">
+            </div>
+            <div class="dish-month-text">
+                <h2>Healthy Salad</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="text-flex">
+                    <p>$18.99</p>
+                    <a class="btn" href="">Order now</a>
+                </div>
+            </div>
         </div>
-    </section>
+
+        <div class="all-dishes-container">
+        <!-- the most sell dishes-->
+        <div class="dish-container">
+            <img src="enchiladas.jpg" alt="">
+            <p>$19.99</p>
+            <h3>Enchiladas Suizas</h3>
+            <p>Corn tortillas filled with chicken and cheese, covered in a creamy delicious green sauce. Served with a side of rice and beans.</p>
+        </div>
+
+           <div class="dish-container">
+            <img src="quesabirrias.jpg" alt="">
+            <p>$19.99</p>
+            <h3>Quesabirria Tacos</h3>
+            <p>4 crispy tacos filled with juicy birria, melted cheese, cilantro and onion. Salsa on the side.</p>
+        </div>
+
+        <div class="dish-container">
+            <img src="shrimpcocktail.jpg" alt="">
+            <p>$21.99</p>
+            <h3>Shrimp Cocktail</h3>
+            <p>Chilled fresh shrimp served with tomato, onion, cucumber, cilantro, avocado and serrano pepper in a delicious clamato mix. Comes with a side of chips or crackers.</p> 
+        </div>
+
+        <div class="dish-container"> 
+            <img src="pozole.jpg" alt="">
+            <p>$22.99</p>
+            <h3>Pozole</h3>
+            <p>Mexican stew made with hominy and meat, served with fresh onion, lettuce, radish and lime.</p>
+        </div>
+    </div>
+    </main>
 </body>
 </html>
