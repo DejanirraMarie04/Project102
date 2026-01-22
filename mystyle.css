@@ -1,11 +1,11 @@
 /*global*/
-* {
+*{
     margin: 0;
     padding: 0;
 }
 body{
     font-family: arial;
-    background-color: beige;
+    background-color: rgb(217, 246, 233);
 }
 a{
     text-decoration: none;
@@ -13,14 +13,19 @@ a{
 }
 
 /*utilities*/
+.container{
+    width: 80%;
+    margin:50px auto;
+}
 .link-selected{
-    color: rgb(108, 8,8);
+    color: rgb(40, 91, 47);
     text-decoration: underline;
 }
 .btn{
     background-color: #222222;
+    border-radius: 8px;
     color: white;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
 }
 /*header*/
@@ -34,6 +39,12 @@ a{
     width: 80%;
     margin: 20px auto;
 }
+.navigation-bar h1{
+    font-style: italic;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 60px;
+    font-weight: lighter;
+}
 .menu a{
     margin-right: 30px;
     font-weight: bold;
@@ -46,16 +57,21 @@ a{
     align-items: center;
     width: 80%;
     margin: 0 auto;
+    border-style: dashed;
+    border-radius: 4px;
 }
 .dish-month-img{
     margin-right: 20px;
 }
 .dish-month-text h2{
-    font-size: 38px;
+    font-size: 42px;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: lighter;
 }
 .dish-month-text p{
     font-size: 14px;
     margin: 10px 0;
+    padding: 20px;
 }
 .dish-month-text .text-flex{
     display: flex;
@@ -75,9 +91,66 @@ a{
     gap: 10px;
 }
 .dish-container{
-    background-color: #222222;
+    background-color: rgb(134, 134, 134);
     color: white;
+    border-radius: 8px;
+    border-style: double;
 }
 .dish-container img{
     width: 100%;
+}
+.dish-container p{
+    text-align: center;
+    padding: 10px 0;
+    margin: 8px;
+}
+.dish-container h3{
+    text-align: center;
+    padding: 5px 0;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: lighter;
+    font-size: 38px;
+}
+
+/*to go*/
+.form-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-container{
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.form-control{
+    margin: 10px auto;;
+}
+.form-control input,
+.form-control textarea,
+.form-control select{
+    width: 100%;
+    padding: 3px;
+}
+.form-control-label{
+    font-size: 12px;
+}
+
+/*payment form*/
+.payment-container{
+    width: 80%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;;
+}
+.pay-control{
+    margin: 10px auto;
+    align-items: center;;
+}
+.pay-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
