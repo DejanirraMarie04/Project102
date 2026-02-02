@@ -1,0 +1,331 @@
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: arial;
+    background-color: rgb(217, 246, 233);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*utilities*/
+.container{
+    width: 80%;
+    margin:50px auto;
+}
+.link-selected{
+    color: rgb(40, 91, 47);
+    text-decoration: underline;
+}
+.btn{
+    background-color: #222222;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+/*header*/
+.site-init{
+    height: 200px;
+}
+.navigation-bar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+}
+.navigation-bar h1{
+    font-style: italic;
+    font-family: 'sofia';
+    font-size: 80px;
+    font-weight: lighter;
+}
+.menu a{
+    margin-right: 30px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-family: comics sans ms;
+}
+/*dish-month*/
+.dish-month-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    border-style: dashed;
+    border-radius: 4px;
+}
+.dish-month-img{
+    margin-right: 20px;
+}
+.dish-month-text h2{
+    font-size: 40px;
+    font-family: 'lucida handwriting';
+    font-weight: lighter;
+}
+.dish-month-text p{
+    font-size: 25px;
+    font-family: 'sofia';
+    margin: 10px 0;
+    padding: 20px;
+}
+.dish-month-text .text-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-flex p{
+    font-size: 22px;
+}
+
+/*all-dishes*/
+.all-dishes-container{
+    width: 65%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.dish-container{
+    background-color: rgb(134, 134, 134);
+    color: white;
+    border-radius: 8px;
+    border-style: double;
+    border-width: 10px;
+}
+.dish-container img{
+    width: 100%;
+    display: block;
+    block-size: 50%;
+}
+.dish-container p{
+    text-align: center;
+    padding: 10px 0;
+    margin: 8px;
+    font-size: 22px;
+    font-family: 'sofia';
+}
+.dish-container h3{
+    text-align: center;
+    padding: 5px 0;
+    font-family: 'lucida handwriting';
+    font-weight: lighter;
+    font-size: 32px;
+}
+
+/*to go*/
+.form-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-direction: row-reverse;
+}
+.form-container{
+    display: flex;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    width: 50%;
+}
+.form-container h2{
+    text-align: center;
+    margin: 20px;
+    font-family: 'lucida handwriting';
+    font-size: 40px;
+    padding: 30px;
+}
+.form-control{
+    margin: 10px auto;
+}
+.form-control input,
+.form-control textarea,
+.form-control select{
+    width: 100%;
+    padding: 3px;
+}
+.form-control label{
+    font-size: 22px;
+    font-family: 'sofia';
+}
+.form-flex section img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 35px;
+    flex-direction: column;
+    border-style: double;
+    border-radius: 10px;
+    border-color: rgb(114, 232, 122);
+}
+
+/*Gallery*/
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+.gallery-container img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    background-color: rgb(167, 192, 229);
+    color: rgb(6, 6, 6);
+    border-radius: 8px;
+    border-style: double;
+    border-width: 10px;
+}
+.gallery a{
+    margin-right: 30px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-family: comics sans ms;
+}
+
+
+/*payment form*/
+.payment-container{
+    width: 30%;
+    margin: 50px auto;
+    background-color: rgb(51, 89, 75);
+    padding: 20px;
+    border-radius: 10px;
+    display:block;
+    color: aliceblue;
+}
+.pay-control{
+    margin: 10px auto;
+    align-items: center;
+}
+.pay-container{
+    display: block;
+    justify-content: center;
+}
+.pay-control label{
+    font-size: 20px;
+    color: aliceblue;
+}
+.pay-control input,
+.pay-control select{
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+.btn{
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    width: 40%;
+}  
+
+
+/*Phone View*/
+@media(max-width: 600px){
+    .menu a{
+        font-weight: bolder;
+        font-size: 22px;
+        font-family: comics sans ms;
+        display: inline-block;
+        padding: 20px;
+}
+    .navigation-bar h1{
+        font-style: italic;
+        font-family: 'sofia';
+        font-size: 60px;
+    }
+    
+    .dish-month-container{
+        flex-direction: column;
+        font-size: 60px;
+        width: 80%;
+    }
+    .dish-month-img{
+        margin: 0 auto;
+    }
+    .all-dishes-container{
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+    .form-flex{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .form-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .form-flex section img{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        block-size: 100%;
+    }
+
+    .payment-container{
+        width: 80%;
+    }
+
+    .gallery-container{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/*Tablet View*/
+@media((min-width:601px) and (max-width:768px)){
+    .menu a{
+        padding: 20px;
+        font-weight: bolder;
+        font-size: 24px;
+        font-family: comics sans ms;
+        display: inline-block;
+    }
+    .navigation-bar h1{
+       font-size: 80px;
+    }
+    .dish-month-container{
+        flex-direction: column;
+        width: 75%;
+    }
+    .all-dishes-container{
+        grid-template-columns: repeat(1, 1fr);
+        width: 75%;
+        flex-direction: column;
+    }
+    .form-flex{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .form-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .form-flex section img{
+        justify-content: center;
+    }
+
+    .payment-container{
+        width: 80%;
+    }
+    .gallery-container{
+        grid-template-columns: (1, 1fr);
+        width: 50%;
+        margin: 5%;
+    }
+    
+}
